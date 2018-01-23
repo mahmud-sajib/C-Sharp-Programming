@@ -1,4 +1,21 @@
-﻿using System;
+/*
+
+An Insurance company follows following rules to calculate premium.
+a. If a person’s health is excellent and the person is between 25 and 35 years of age and
+lives in a city and is a male then the premium is Tk. 4 per thousand and his policy
+amount cannot exceed Tk. 2 lakhs.
+b. If a person satisfies all the above conditions except that the gender is female then the
+premium is Tk. 3 per thousand and her policy amount cannot exceed Tk. 1 lakh.
+c. If a person’s health is poor and the person is between 25 and 35 years of age and lives in
+a village and is a male then the premium is Tk. 6 per thousand and his policy cannot
+exceed Tk. 10,000.
+d. In all other cases the person is not insured.
+Write a program to output whether the person should be insured or not, his/her premium
+rate and maximum amount for which he/she can be insured.
+
+*/
+
+using System;
 
 namespace ConsoleApp4
 {

@@ -1,2 +1,1 @@
-# C-Sharp-Programming
-C#
+A collection of C# programs!

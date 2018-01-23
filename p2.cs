@@ -1,4 +1,10 @@
-﻿using System;
+/*
+
+Write a program to find out distance between these two points (x1, y1) and (x2, y2).
+
+*/
+
+using System;
 
 namespace ConsoleApp1
 {

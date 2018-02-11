@@ -11,10 +11,9 @@ namespace ConsoleApp1
             a = float.Parse(Console.ReadLine());
             b = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Height: {0: #.##} ",a);
-            Console.WriteLine("Width: {0: #.##} ", b);
-            Console.WriteLine("Area: {0: #.##} ", a*b);
-
+            Console.WriteLine("Height {0,10: :0#.##} m", a);
+            Console.WriteLine("Width  {0,10: :0#.##} m", b);
+            Console.WriteLine("Area   {0,10: :##.##} m", a*b);
         }
     }
 }

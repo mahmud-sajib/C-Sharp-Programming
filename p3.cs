@@ -41,15 +41,10 @@ namespace ConsoleApp4
             dig4 =  ((dig4 + 1) % 10);
             dig5 =  ((dig5 + 1) % 10);
 
-            // storing digits into array
-            int[] arr = new int[5] { dig1, dig2, dig3, dig4, dig5 } ;
-
+            
             // printing the digits
-            for(int i=4; i >= 0; i--)
-            {
-                Console.Write(arr[i]);
-            }
-            Console.ReadLine();
+             Console.WriteLine("{0} {1} {2} {3} {4} ", d5, d4, d3, d2, d1);
+           
         }
     }
 }

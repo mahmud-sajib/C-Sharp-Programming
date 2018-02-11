@@ -22,6 +22,7 @@ namespace ConsoleApp1
             if (flag == 0)
             {
                 Console.Write("Number is Prime.");
+                break;
             }
                
         }

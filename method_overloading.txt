@@ -1,0 +1,29 @@
+using System;
+
+namespace ConsoleApp6
+{
+    public class Shape
+    {
+        public void area(int a ,int b)
+        {
+            int res = a * b;
+            Console.WriteLine(res);
+        }
+
+        public void area(int a)
+        {
+            int res = a * a;
+            Console.WriteLine(res);
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Shape obj = new Shape();
+            obj.area(10, 5);
+            obj.area(5);
+        }
+    }
+}

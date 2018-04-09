@@ -1,0 +1,44 @@
+using System;
+
+namespace ConsoleApp6
+{
+    // Interface methods are public and abstract by default. You cannot explicitly use public and abstract keywords for an interface method.
+
+    public interface Number
+    {
+        void myMethod(int x, int y);
+    }
+
+    public class Num1 : Number
+    {
+        public void myMethod(int x, int y)
+        {
+            Console.WriteLine(x + y);
+        }
+    }
+
+    public class Num2 : Number
+    {
+        public void myMethod(int x, int y)
+        {
+            Console.WriteLine(x - y);
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // object instantiation from base class
+
+            Number obj;
+
+            obj = new Num1();
+            obj.myMethod(15, 15);
+            
+            obj = new Num2();
+            obj.myMethod(15, 15);
+           
+        }
+    }
+}

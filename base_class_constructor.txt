@@ -1,0 +1,28 @@
+using System;
+
+namespace ConsoleApp5
+{
+    public class BaseClass
+    {
+        public BaseClass(int x)
+        {
+            Console.WriteLine("The value from base class is:" + x);
+        }
+    }
+
+    public class SubClass : BaseClass
+    {
+        public SubClass(int x):base(x)
+        {
+            Console.WriteLine("The value from sub class is:" + x);
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SubClass ob1 = new SubClass(10);
+        }
+    }
+}

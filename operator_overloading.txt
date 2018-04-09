@@ -1,0 +1,28 @@
+using System;
+
+namespace ConsoleApp6
+{
+    public class Shape
+    {
+        public Shape(int a ,int b)
+        {
+            int res = a * b;
+            Console.WriteLine(res);
+        }
+
+        public Shape(int a)
+        {
+            int res = a * a;
+            Console.WriteLine(res);
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Shape obj1 = new Shape(10,5);
+            Shape obj2 = new Shape(7);
+        }
+    }
+}

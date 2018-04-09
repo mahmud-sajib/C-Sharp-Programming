@@ -11,11 +11,6 @@ namespace ConsoleApp2
             this.grade = grade;
         }
 
-        public void Display()
-        {
-            Console.WriteLine("Grade: " + grade);
-        }
-
         // creating a method for logical operator overloading
         public static bool operator &(Student ob1, Student ob2)
         {

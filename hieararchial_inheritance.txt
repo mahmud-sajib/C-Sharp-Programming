@@ -1,0 +1,33 @@
+using System;
+
+namespace ConsoleApp5
+{
+    public class Student
+    {
+        public string dept = "CSE";
+    }
+
+    public class John:Student
+    {
+        public string fullName = "John Doe";
+    }
+
+    public class Arya:Student
+    {
+        public string fullName = "Arya Stark";
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            John ob1 = new John();
+            Console.WriteLine(ob1.fullName);
+            Console.WriteLine(ob1.dept);
+
+            Arya ob2 = new Arya();
+            Console.WriteLine(ob2.fullName);
+            Console.WriteLine(ob2.dept);
+        }
+    }
+}

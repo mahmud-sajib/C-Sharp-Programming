@@ -1,0 +1,33 @@
+using System;
+
+namespace ConsoleApp5
+{
+    public class A
+    {
+        public int x = 10;
+    }
+
+    public class B:A
+    {
+        public int y = 5;
+    }
+
+    public class C:B
+    {
+        public int z;
+        public void sum()
+        {
+            z = x + y;
+            Console.WriteLine("Summation:" + z);
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            C ob1 = new C();
+            ob1.sum();
+        }
+    }
+}

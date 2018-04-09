@@ -1,0 +1,27 @@
+using System;
+
+namespace ConsoleApp6
+{
+
+    public enum DayTime { morning,evening };
+   
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            DayTime timeNow = DayTime.morning;
+
+            switch (timeNow)
+            {
+                case DayTime.morning:
+                    Console.WriteLine("Good Morning");
+                    break;
+                case DayTime.evening:
+                    Console.WriteLine("Good Evening");
+                    break;
+            }
+
+        }
+    }
+}

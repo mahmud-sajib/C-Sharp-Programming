@@ -1,0 +1,31 @@
+using System;
+
+namespace ConsoleApp6
+{
+    public class A
+    {
+       public virtual void Greet()
+        {
+            Console.WriteLine("Hello");
+        }
+    }
+
+    public class B : A
+    {
+        public override void Greet()
+        {
+            base.Greet();
+            Console.WriteLine("Hi");
+        }
+    }
+
+    class Program
+    {
+        static void Main()
+        {
+            B ob1 = new B();
+            A ob2 = ob1;
+            ob2.Greet();
+        }
+    }
+}

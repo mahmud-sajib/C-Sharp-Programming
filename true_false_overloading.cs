@@ -11,7 +11,7 @@ namespace ConsoleApp2
             this.grade = grade;
         }
 
-        // creating a method for logical operator overloading
+        // creating a method for true false operator overloading
 
         public static bool operator true(Student ob1)
         {
@@ -38,7 +38,7 @@ namespace ConsoleApp2
         {
             Student ob1 = new Student(20);
 
-            // comparing two objects to make relational operator overloading
+            // comparing to make true false operator overloading
             if (ob1)
             {
                 Console.WriteLine("Non Zero result");

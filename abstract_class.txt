@@ -1,0 +1,42 @@
+using System;
+
+namespace ConsoleApp6
+{
+    public abstract class Number
+    {
+        public abstract void myMethod(int x, int y);
+    }
+
+    public class Num1 : Number
+    {
+        public override void myMethod(int x, int y)
+        {
+            Console.WriteLine(x + y);
+        }
+    }
+
+    public class Num2 : Number
+    {
+        public override void myMethod(int x, int y)
+        {
+            Console.WriteLine(x - y);
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // object instantiation from base class
+
+            Number obj;
+
+            obj = new Num1();
+            obj.myMethod(10, 5);
+            
+            obj = new Num2();
+            obj.myMethod(10, 5);
+           
+        }
+    }
+}

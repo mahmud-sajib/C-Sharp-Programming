@@ -1,0 +1,25 @@
+using System;
+
+namespace ConsoleApp5
+{
+    public class Student
+    {
+        public string fullName = "John Doe";
+    }
+
+    public class John:Student
+    {
+        public int cgpa = 3;
+   
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            John ob1 = new John();
+            Console.WriteLine(ob1.fullName);
+            Console.WriteLine(ob1.cgpa);
+        }
+    }
+}

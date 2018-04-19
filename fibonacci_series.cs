@@ -9,7 +9,7 @@ namespace ConsoleApp1
             Console.WriteLine("Please enter a value");
             int length = int.Parse(Console.ReadLine());
 
-            int a = 0;
+            int a = 1;
             int b = 1;
             int c;
             Console.Write(a + " ");
